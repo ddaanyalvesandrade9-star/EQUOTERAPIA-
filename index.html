@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EquoTEA | Equoterapia para Pessoas com Autismo · APAE Campina Grande</title>
+<meta name="description" content="EquoTEA – projeto de equoterapia para pessoas com Transtorno do Espectro Autista (TEA) em parceria com a APAE de Campina Grande. Conheça a equoterapia, nossos cavalos e como apoiar.">
+<meta name="theme-color" content="#12484F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ícones (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-horseshoe" viewBox="0 0 24 24"><path d="M6 21c-2-3-3-6-3-9a9 9 0 0 1 18 0c0 3-1 6-3 9h-4c1.2-2 2-4.200 2-7a4 4 0 0 0-8 0c0 2.800.8 5 2 7H6Z"/><path d="M5.500 12.500v.01M18.500 12.500v.01M7 17v.01M17 17v.01"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.500 4.500 0 0 1 8-2.800A4.500 4.500 0 0 1 20 10c0 6-8 11-8 11Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.500 8 8 9 4.500-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C9 4 4 9 4 15a5 5 0 0 0 5 5c6 0 11-5 11-16Z"/><path d="M4 20c3-6 7-9 12-11"/></symbol>
+    <symbol id="i-stetho" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3M4 3h4M12 3h4M10 13v2a5 5 0 0 0 10 0v-1"/><circle cx="20" cy="12" r="2"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3C4.500 3 3 5 3 7.500c0 3 1.500 4 2 7 .4 2.500.8 6.500 2.500 6.500 1.500 0 1-4 3.500-4s2 4 3.500 4c1.700 0 2.100-4 2.500-6.500.5-3 2-4 2-7C21 5 19.500 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"/></symbol>
+    <symbol id="i-syringe" viewBox="0 0 24 24"><path d="m18 2 4 4M16 4l4 4M20 8 9 19l-5 1 1-5L16 4M14 6l4 4M8 12l4 4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 9.500V21h14V9.500M10 21v-6h4v6"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.500 6.500a4 4 0 0 0-5 5L3 18l3 3 6.500-6.500a4 4 0 0 0 5-5l-2.500 2.500-2.500-.5-.5-2.500 2.500-2.500Z"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M12 10.500v6M9 13.500h6"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="m3 9 1.500-5h15L21 9M3 9v11h18V9M3 9c0 1.700 1.300 3 3 3s3-1.300 3-3c0 1.700 1.300 3 3 3s3-1.300 3-3c0 1.700 1.300 3 3 3s3-1.300 3-3M10 20v-5h4v5"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M2 21h20M9 21v-6h6v6M9 11h.01M15 11h.01"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.500"/><path d="M2 20a7 7 0 0 1 14 0M16 4.500a3.500 3.500 0 0 1 0 7M18 14a7 7 0 0 1 4 6"/></symbol>
+    <symbol id="i-body" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><path d="M12 8v7M6 11l6-3 6 3M9 21l3-6 3 6"/></symbol>
+    <symbol id="i-balance" viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 8a3.500 3.500 0 0 0 6 0L5 7ZM19 7l-3 8a3.500 3.500 0 0 0 6 0l-3-8ZM8 21h8"/></symbol>
+    <symbol id="i-move" viewBox="0 0 24 24"><path d="m5 9-3 3 3 3M19 9l3 3-3 3M9 5l3-3 3 3M9 19l3 3 3-3M2 12h20M12 2v20"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.500c.7.7 1 1.500 1 2.500h6c0-1 .3-1.800 1-2.500A6 6 0 0 0 12 3Z"/></symbol>
+    <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.500 2.300 2 4 2s3-.5 4-2M9 9.500v.01M15 9.500v.01"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.500 7.200L4 20l1.200-4.500A8 8 0 1 1 21 12Z"/><path d="M8.500 11h7M8.500 14h4"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4V8Z"/><circle cx="12" cy="13" r="3.500"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5Z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9 7c-3 1-5 3.500-5 7v3h6v-6H7c0-2 1-3 3-3.500L9 7Zm10 0c-3 1-5 3.500-5 7v3h6v-6h-3c0-2 1-3 3-3.500L19 7Z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path d="M20 11.500a8 8 0 0 1-11.900 7L4 20l1.500-4A8 8 0 1 1 20 11.500Z"/><path d="M9 9c0 3 3 6 6 6l1.200-1.300-2-1-.8.8c-1-.4-2-1.400-2.400-2.400l.8-.8-1-2L9 9Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.500 7-12a7 7 0 0 0-14 0c0 5.500 7 12 7 12Z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.500 6.500v.01"/></symbol>
+    <symbol id="i-pix" viewBox="0 0 24 24"><path d="m12 3 4.500 4.500L12 12 7.500 7.500 12 3ZM12 12l4.500 4.500L12 21l-4.500-4.500L12 12ZM3 12l3-3M18 9l3 3-3 3M3 12l3 3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.500v.01"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1.400 1.400 0 0 0 2-2M14 14l2.500 2.500a1.400 1.400 0 0 0 2-2L15 11M8 14l-4-4 3-5 4 1 3-1 4 3 2 4-3 3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="topbar" id="topbar">
+    <div class="container topbar__in">
+      <ul class="topbar__info">
+        <li><svg class="ic"><use href="#i-clock"/></svg>Seg–Sex · 07:30–17:30</li>
+        <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:+558333158718">(83) 3315-8718</a></li>
+        <li><svg class="ic"><use href="#i-pin"/></svg>Catolé, Campina Grande/PB</li>
+      </ul>
+      <div class="topbar__soc">
+        <a href="https://instagram.com/cepae.equoterapiaapaecg" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="#i-insta"/></svg></a>
+        <a href="https://wa.me/5583991149334" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-whats"/></svg></a>
+        <a href="mailto:apaecampinagrande@gmail.com" aria-label="E-mail"><svg class="ic"><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container header__in">
+    <a href="#inicio" class="logo" aria-label="EquoTEA – início">
+      <span class="logo__mark"><svg class="ic"><use href="#i-horseshoe"/></svg></span>
+      <span class="logo__txt"><b>Equo<i>TEA</i></b><small>APAE Campina Grande</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#equoterapia">Conheça a Equoterapia</a>
+      <a href="#cavalos">Nossos Cavalos</a>
+      <a href="#cuidado">Cuidado e Bem-Estar</a>
+      <a href="#necessidades">Nossas Necessidades</a>
+      <a href="#parceiro">Seja um Parceiro</a>
+      <a href="#faca-parte">Faça Parte</a>
+      <span class="nav__ind" id="navInd" aria-hidden="true"></span>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= 1 · INÍCIO ================= -->
+<section class="hero" id="inicio" data-nav="inicio">
+  <div class="hero__bg" id="heroBg">
+    <img src="assets/fotos/hero-fundo.jpg" alt="" onerror="this.remove()">
+  </div>
+  <div class="hero__pattern"></div>
+  <div class="container hero__in">
+    <div class="hero__text">
+      <p class="eyebrow reveal">Projeto acadêmico · Medicina Veterinária</p>
+      <h1 class="hero__title reveal" style="--d:.08s">Equo<i>TEA</i></h1>
+      <p class="hero__sub reveal" style="--d:.16s">Equoterapia para Pessoas com Transtorno do Espectro Autista</p>
+      <p class="hero__slogan reveal" style="--d:.24s">Cuidar de quem também cuida: acompanhar, divulgar e fortalecer a equoterapia na APAE de Campina Grande, com respeito ao bem-estar dos cavalos.</p>
+      <div class="hero__cta reveal" style="--d:.32s">
+        <a href="#projeto" class="btn btn--terra">Conheça o projeto <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="#parceiro" class="btn btn--ghost">Quero apoiar</a>
+      </div>
+      <ul class="hero__tags reveal" style="--d:.42s">
+        <li><svg class="ic"><use href="#i-horseshoe"/></svg>Equoterapia</li>
+        <li><svg class="ic"><use href="#i-heart"/></svg>Inclusão</li>
+        <li><svg class="ic"><use href="#i-stetho"/></svg>Medicina Veterinária</li>
+      </ul>
+    </div>
+    <div class="hero__photo reveal slide-right" style="--d:.2s">
+      <div class="carousel hero__video" id="heroVideoBox">
+        <video id="heroVideo" src="assets/videos/hero.mp4" autoplay muted loop playsinline preload="auto" aria-label="Vídeo do projeto EquoTEA"></video>
+        <button class="vid__btn" id="vidBtn" type="button" aria-label="Pausar vídeo" aria-pressed="false"><svg class="ic"><use href="#i-pause"/></svg></button>
+      </div>
+      <div class="badge-float"><strong>Campina Grande</strong><span>Paraíba · APAE desde 1982</span></div>
+    </div>
+  </div>
+  <a href="#projeto" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+</section>
+
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon__track">
+    <span>Equoterapia</span><i></i><span>Autismo (TEA)</span><i></i><span>Inclusão</span><i></i><span>Bem-estar animal</span><i></i><span>Medicina Veterinária</span><i></i><span>APAE Campina Grande</span><i></i>
+    <span>Equoterapia</span><i></i><span>Autismo (TEA)</span><i></i><span>Inclusão</span><i></i><span>Bem-estar animal</span><i></i><span>Medicina Veterinária</span><i></i><span>APAE Campina Grande</span><i></i>
+  </div>
+</div>
+
+<section class="section section--white" id="projeto" data-nav="inicio">
+  <div class="container split">
+    <div class="split__media reveal slide-left">
+      <figure class="foto foto--logo">
+        <img src="assets/fotos/apae-logo.webp" alt="Logotipo da APAE de Campina Grande - PB: mãos acolhendo uma flor" loading="lazy">
+      </figure>
+    </div>
+    <div class="split__text">
+      <p class="eyebrow eyebrow--dark reveal">Conheça nosso projeto</p>
+      <h2 class="reveal" style="--d:.06s">Quem é a APAE</h2>
+      <p class="reveal" style="--d:.12s">A <strong>APAE (Associação de Pais e Amigos dos Excepcionais) de Campina Grande</strong> é uma instituição filantrópica, beneficente e sem fins lucrativos, fundada em <strong>1º de setembro de 1982</strong>. Seu principal objetivo é promover a qualidade de vida, a inclusão social e o desenvolvimento de pessoas com deficiência intelectual e múltipla e transtornos do desenvolvimento.</p>
+      <p class="reveal" style="--d:.18s">A instituição atende crianças, adolescentes, adultos e idosos, oferecendo serviços gratuitos e continuados nas áreas de saúde, educação e assistência social. Seu trabalho busca proporcionar mais autonomia, independência, desenvolvimento de habilidades e qualidade de vida às pessoas atendidas, além de oferecer acolhimento e orientação às suas famílias.</p>
+      <blockquote class="callout reveal" style="--d:.24s">Um dos serviços da instituição é a equoterapia, em que o cavalo é utilizado como instrumento de reabilitação.</blockquote>
+      <div class="stats reveal" style="--d:.3s">
+        <div><b data-count="1982" data-plain="1">0</b><span>ano de fundação da APAE Campina Grande</span></div>
+        <div><b data-count="4">0</b><span>públicos atendidos: crianças, adolescentes, adultos e idosos</span></div>
+        <div><b data-count="3">0</b><span>áreas: saúde, educação e assistência social</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="iniciativa" data-nav="inicio">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow eyebrow--dark reveal">A iniciativa</p>
+      <h2 class="reveal" style="--d:.06s">O projeto Equo<span class="accent">TEA</span></h2>
+      <p class="reveal" style="--d:.12s">Equoterapia para Pessoas com Transtorno do Espectro Autista (TEA) surgiu do interesse em conhecer e divulgar a equoterapia como uma <strong>alternativa terapêutica complementar</strong> para crianças com autismo. A iniciativa foi estabelecida em parceria com a APAE de Campina Grande.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="card card--top reveal">
+        <span class="ico"><svg class="ic"><use href="#i-eye"/></svg></span>
+        <h3>Observar as sessões</h3>
+        <p>Acompanhar de perto as sessões de equoterapia realizadas na APAE de Campina Grande.</p>
+      </article>
+      <article class="card card--top reveal" style="--d:.08s">
+        <span class="ico"><svg class="ic"><use href="#i-bulb"/></svg></span>
+        <h3>Compreender os benefícios</h3>
+        <p>Entender os possíveis benefícios da prática para o desenvolvimento <strong>motor, cognitivo, emocional e social</strong> das crianças.</p>
+      </article>
+      <article class="card card--top reveal" style="--d:.16s">
+        <span class="ico"><svg class="ic"><use href="#i-stetho"/></svg></span>
+        <h3>Olhar da Medicina Veterinária</h3>
+        <p>O projeto incorporou a perspectiva veterinária, destacando a importância da saúde, do manejo adequado e do bem-estar dos cavalos envolvidos nas atividades.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--teal" id="objetivos" data-nav="inicio">
+  <div class="container">
+    <div class="head head--light">
+      <p class="eyebrow reveal">Objetivos gerais</p>
+      <h2 class="reveal" style="--d:.06s">O que buscamos com o EquoTEA</h2>
+    </div>
+    <div class="grid grid--2">
+      <div class="mini reveal">
+        <svg class="ic"><use href="#i-target"/></svg>
+        <h3>Acompanhar e divulgar</h3>
+        <p>Acompanhar e divulgar a prática da equoterapia realizada na APAE de Campina Grande, buscando compreender como essa modalidade terapêutica pode contribuir para o desenvolvimento motor, cognitivo, emocional e social de crianças com TEA.</p>
+      </div>
+      <div class="mini reveal" style="--d:.1s">
+        <svg class="ic"><use href="#i-horseshoe"/></svg>
+        <h3>Observar e conscientizar</h3>
+        <p>Observar as condições de saúde, alimentação, manejo e bem-estar dos cavalos utilizados nas sessões, destacando a importância da Medicina Veterinária nesse contexto.</p>
+      </div>
+    </div>
+    <div class="grid grid--2" style="margin-top:24px">
+      <div class="mini reveal">
+        <svg class="ic"><use href="#i-users"/></svg>
+        <h3>A importância de dar visibilidade</h3>
+        <p>Muitas famílias ainda desconhecem a equoterapia, seu funcionamento e suas possíveis contribuições para o desenvolvimento das crianças. Dar visibilidade significa divulgar informações, valorizar o trabalho das instituições e apresentar às famílias outras possibilidades de acompanhamento terapêutico.</p>
+      </div>
+      <div class="mini reveal" style="--d:.1s">
+        <svg class="ic"><use href="#i-heart"/></svg>
+        <h3>O que queremos transformar</h3>
+        <p>Queremos que mais pessoas conheçam e valorizem a equoterapia, ampliando a informação e a conscientização. E fortalecer a relação entre a Medicina Veterinária e as terapias assistidas por animais: o cuidado com a saúde física, a alimentação, o comportamento e o bem-estar dos cavalos é essencial para atividades éticas, seguras e responsáveis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2 · CONHEÇA A EQUOTERAPIA ================= -->
+<section class="section section--white" id="equoterapia" data-nav="equoterapia">
+  <div class="container">
+    <div class="split split--rev">
+      <div class="split__media reveal slide-right">
+        <figure class="foto foto--wide">
+          <img src="assets/fotos/equoterapia.webp" alt="Criança sorrindo, de capacete, deitada sobre o cavalo durante uma sessão de equoterapia, acolhida por uma profissional" loading="lazy">
+        </figure>
+      </div>
+      <div class="split__text">
+        <p class="eyebrow eyebrow--dark reveal">Conceito e benefícios</p>
+        <h2 class="reveal" style="--d:.06s">Conheça a <span class="accent">equoterapia</span></h2>
+        <p class="reveal" style="--d:.12s">Na equoterapia, o <strong>cavalo é utilizado como instrumento de reabilitação</strong>. Por meio de seus <strong>movimentos tridimensionais</strong>, ele estimula ajustes posturais, equilíbrio, coordenação motora e consciência corporal.</p>
+        <p class="reveal" style="--d:.18s">No EquoTEA, nós a conhecemos como uma <strong>alternativa terapêutica complementar</strong> para crianças com autismo, e acompanhamos as sessões para compreender seus possíveis benefícios.</p>
+      </div>
+    </div>
+
+    <h3 class="subhead reveal" style="margin-top:80px">O que o movimento do cavalo estimula</h3>
+    <div class="grid grid--4">
+      <article class="card benefit reveal"><span class="ico"><svg class="ic"><use href="#i-body"/></svg></span><h3>Ajustes posturais</h3><p>O movimento do cavalo pede constantes adaptações do corpo de quem monta.</p></article>
+      <article class="card benefit reveal" style="--d:.06s"><span class="ico"><svg class="ic"><use href="#i-balance"/></svg></span><h3>Equilíbrio</h3><p>Manter-se sobre o cavalo em movimento estimula o equilíbrio.</p></article>
+      <article class="card benefit reveal" style="--d:.12s"><span class="ico"><svg class="ic"><use href="#i-move"/></svg></span><h3>Coordenação motora</h3><p>Os movimentos tridimensionais estimulam a coordenação do corpo.</p></article>
+      <article class="card benefit reveal" style="--d:.18s"><span class="ico"><svg class="ic"><use href="#i-smile"/></svg></span><h3>Consciência corporal</h3><p>O contato com o cavalo favorece a percepção do próprio corpo.</p></article>
+    </div>
+
+    <h3 class="subhead reveal" style="margin-top:64px">O que o EquoTEA acompanha nas crianças com TEA</h3>
+    <ul class="chips reveal">
+      <li><svg class="ic"><use href="#i-move"/></svg>Desenvolvimento motor</li>
+      <li><svg class="ic"><use href="#i-bulb"/></svg>Desenvolvimento cognitivo</li>
+      <li><svg class="ic"><use href="#i-heart"/></svg>Desenvolvimento emocional</li>
+      <li><svg class="ic"><use href="#i-users"/></svg>Desenvolvimento social</li>
+    </ul>
+    <div class="note-box reveal">
+      <svg class="ic"><use href="#i-info"/></svg>
+      <p>O EquoTEA é um projeto acadêmico de observação e divulgação. A equoterapia é apresentada como uma alternativa terapêutica <strong>complementar</strong>, realizada por profissionais da instituição; este site não substitui avaliação nem orientação profissional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3 · NOSSOS CAVALOS ================= -->
+<section class="section section--sand" id="cavalos" data-nav="cavalos" style="padding-block:clamp(48px,6vw,80px)">
+  <div class="container">
+    <div class="quote quote--soft reveal">
+      <svg class="ic"><use href="#i-quote"/></svg>
+      <p>Na equoterapia, não se cuida apenas dos praticantes, mas também dos cavalos que tornam esse trabalho possível. Nossa responsabilidade é garantir que eles recebam cuidado, respeito e dignidade.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4 · CUIDADO E BEM-ESTAR ================= -->
+<section class="section section--white" id="cuidado" data-nav="cuidado">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow eyebrow--dark reveal">Saúde, alimentação e manejo</p>
+      <h2 class="reveal" style="--d:.06s">Cuidar de quem <span class="accent">também cuida</span></h2>
+      <p class="reveal" style="--d:.12s">O cuidado com a saúde e o bem-estar dos cavalos é fundamental para que eles participem das atividades de equoterapia com segurança, conforto e qualidade de vida. Afinal, eles precisam receber atenção, respeito e cuidados adequados.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="card care reveal"><span class="num">01</span><span class="ico"><svg class="ic"><use href="#i-leaf"/></svg></span><h3>Alimentação e suplementação adequada</h3><p>Os cavalos precisam de uma alimentação equilibrada, composta principalmente por <strong>volumoso</strong> (capim e feno), além de <strong>água limpa e fresca</strong> disponível constantemente.</p><p>Quando necessário, podem receber ração, minerais e suplementos, de acordo com a idade, o peso, a condição corporal e o nível de atividade de cada animal, sempre com orientação profissional.</p></article>
+      <article class="card care reveal" style="--d:.08s"><span class="num">02</span><span class="ico"><svg class="ic"><use href="#i-stetho"/></svg></span><h3>Acompanhamento veterinário periódico</h3><p>O acompanhamento do médico-veterinário é essencial para avaliar a saúde geral dos cavalos, identificar possíveis alterações e prevenir doenças.</p><p>As avaliações periódicas observam peso, condição corporal, comportamento, locomoção, pele, mucosas e sinais clínicos.</p></article>
+      <article class="card care reveal" style="--d:.16s"><span class="num">03</span><span class="ico"><svg class="ic"><use href="#i-tooth"/></svg></span><h3>Saúde odontológica e casqueamento</h3><p>Problemas dentários podem dificultar a mastigação, causar dor e comprometer a alimentação. Por isso, são importantes avaliações odontológicas periódicas.</p><p>O <strong>casqueamento</strong> mantém os cascos em boas condições e previne rachaduras, desequilíbrios e problemas de locomoção. Deve ser feito por profissional capacitado, respeitando a necessidade de cada animal.</p></article>
+      <article class="card care reveal"><span class="num">04</span><span class="ico"><svg class="ic"><use href="#i-syringe"/></svg></span><h3>Vacinação, vermifugação e cuidados sanitários</h3><p>A vacinação previne doenças infecciosas, conforme os riscos epidemiológicos e as orientações veterinárias. A vermifugação deve ser planejada com acompanhamento profissional, considerando exames e a necessidade de cada cavalo.</p><p>Também é importante manter os ambientes limpos, higienizar os materiais, oferecer água de qualidade e controlar a presença de parasitas.</p></article>
+      <article class="card care reveal" style="--d:.08s"><span class="num">05</span><span class="ico"><svg class="ic"><use href="#i-eye"/></svg></span><h3>Prevenção e avaliação do bem-estar</h3><p>É necessário observar diariamente o comportamento dos cavalos, identificando sinais como falta de apetite, apatia, alterações na locomoção, ferimentos, cólicas ou mudanças de comportamento.</p><p>Além da saúde física, devemos considerar o <strong>bem-estar emocional</strong>: descanso, socialização com outros animais, espaço adequado para movimentação e uma rotina que respeite seus limites físicos e comportamentais.</p></article>
+      <article class="card care card--top reveal" style="--d:.16s"><span class="num">06</span><span class="ico"><svg class="ic"><use href="#i-shield"/></svg></span><h3>Resumo: sinais para ficar atento</h3>
+        <ul class="checklist">
+          <li><svg class="ic"><use href="#i-check"/></svg>Falta de apetite</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Apatia</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Alterações na locomoção</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Ferimentos</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Cólicas</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Mudanças de comportamento</li>
+        </ul></article>
+    </div>
+    <div class="vet-box reveal">
+      <span class="ico"><svg class="ic"><use href="#i-stetho"/></svg></span>
+      <div>
+        <h3>A importância da atuação da Medicina Veterinária</h3>
+        <p>A Medicina Veterinária tem um papel indispensável na equoterapia, pois garante que os cavalos estejam saudáveis e aptos para participar das atividades terapêuticas.</p>
+        <p>O médico-veterinário atua na prevenção de doenças, no acompanhamento nutricional, na avaliação clínica e na orientação dos cuidados diários, contribuindo tanto para a segurança dos praticantes quanto para a qualidade de vida dos animais.</p>
+        <p class="final">Cuidar de quem também cuida é reconhecer a importância desses grandes parceiros.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5 · NOSSAS NECESSIDADES ================= -->
+<section class="section section--sand" id="necessidades" data-nav="necessidades">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow eyebrow--dark reveal">Estrutura, equipamentos e materiais</p>
+      <h2 class="reveal" style="--d:.06s">O que precisamos <span class="accent">melhorar?</span></h2>
+      <p class="reveal" style="--d:.12s">Para que a equoterapia aconteça de maneira segura, adequada e acolhedora, é fundamental oferecer boas condições tanto aos praticantes quanto aos cavalos. Durante a visita técnica à APAE de Campina Grande, identificamos necessidades de infraestrutura, equipamentos e materiais. Escolha uma categoria:</p>
+    </div>
+    <div class="tabs reveal" id="needTabs" role="tablist" aria-label="Categorias de necessidades"></div>
+    <div id="needPanels"></div>
+
+    <div class="survey">
+      <h3 class="subhead reveal">Resumo do levantamento</h3>
+      <div class="grid grid--3">
+        <article class="card card--top reveal"><span class="num-big">1</span><h3>Estrutura</h3><p>Reforma ou construção de baias maiores e adequadas aos cavalos, limpeza e organização dos espaços, com retirada de entulhos e resíduos, e melhoria das condições de higiene, ventilação e segurança.</p></article>
+        <article class="card card--top reveal" style="--d:.08s"><span class="num-big">2</span><h3>Equipamentos</h3><p>Renovação dos equipamentos de montaria, como selas, mantas, cabeçadas, rédeas e estribos, priorizando materiais novos, seguros e adequados às necessidades dos praticantes.</p></article>
+        <article class="card card--top reveal" style="--d:.16s"><span class="num-big">3</span><h3>Materiais</h3><p>Disponibilizar materiais de higiene, primeiros socorros, curativos e produtos veterinários necessários à rotina dos animais.</p></article>
+      </div>
+    </div>
+    <div class="cta-band reveal">
+      <p>Propomos campanhas de arrecadação, busca por parcerias e mobilização de apoiadores para um ambiente mais adequado, seguro e acolhedor.</p>
+      <a href="#parceiro" class="btn btn--terra">Quero ajudar <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6 · SEJA UM PARCEIRO ================= -->
+<section class="section section--white" id="parceiro" data-nav="parceiro">
+  <div class="container">
+    <div class="head head--center">
+      <p class="eyebrow eyebrow--dark reveal">Campanhas, doações e parcerias</p>
+      <h2 class="reveal" style="--d:.06s">Como <span class="accent">ajudar?</span></h2>
+      <p class="reveal" style="--d:.12s">Cada gesto de solidariedade contribui para fortalecer a equoterapia, proporcionar melhores condições aos nossos cavalos e garantir a continuidade de um trabalho que transforma vidas.</p>
+    </div>
+    <div class="grid grid--3 grid--start" id="helpGrid"></div>
+  </div>
+</section>
+
+<!-- ================= 7 · FAÇA PARTE ================= -->
+<section class="section section--sand" id="faca-parte" data-nav="faca-parte">
+  <div class="container">
+    <div class="split">
+      <div class="split__text">
+        <p class="eyebrow eyebrow--dark reveal">Divulgação, depoimentos e contatos</p>
+        <h2 class="reveal" style="--d:.06s">Faça parte dessa <span class="accent">transformação</span></h2>
+        <p class="reveal" style="--d:.12s">Dar visibilidade ao trabalho transformador realizado pela APAE é essencial para ampliar o reconhecimento da população de Campina Grande, fortalecer a causa da equoterapia e atrair novos parceiros e apoiadores para a iniciativa.</p>
+        <p class="reveal" style="--d:.18s">Compartilhar este site, seguir nossas páginas e contar para outras pessoas já é uma forma de ajudar.</p>
+        <div class="hero__cta reveal" style="--d:.24s">
+          <button class="btn btn--teal" type="button" id="shareBtn"><svg class="ic"><use href="#i-arrow"/></svg> Compartilhar este site</button>
+          <a href="#contato" class="btn btn--line">Falar com o projeto</a>
+        </div>
+        <p class="form__msg" id="shareMsg" role="status" aria-live="polite"></p>
+      </div>
+      <div class="split__media reveal slide-right">
+        <figure class="foto">
+          <img src="assets/fotos/divulgacao.jpg" alt="Praticante montada em um cavalo branco, acompanhada por profissionais da equipe, na área coberta de equoterapia" loading="lazy">
+
+        </figure>
+      </div>
+    </div>
+
+    <div class="gallery-head" style="margin-top:84px">
+      <p class="eyebrow eyebrow--dark reveal">Galeria</p>
+      <h3 class="subhead reveal">Momentos do EquoTEA</h3>
+      <p class="reveal" style="margin:-8px 0 26px;color:var(--muted);max-width:760px">Fotos reais das sessões, dos cavalos e da rotina na APAE, publicadas com autorização. Clique em uma foto para ampliá-la.</p>
+    </div>
+    <div class="gallery" id="gallery"></div>
+
+    <h3 class="subhead reveal" style="margin-top:84px">Canais de comunicação</h3>
+    <p class="reveal" style="margin:-8px 0 26px;color:var(--muted);max-width:760px">Acompanhe nossas páginas oficiais para ficar por dentro das novidades, das campanhas ativas e do impacto diário do projeto na vida dos praticantes.</p>
+    <div class="grid channels">
+      <div class="channel reveal"><span class="ico"><svg class="ic"><use href="#i-insta"/></svg></span><small>Instagram</small><b id="chInsta"></b></div>
+      <div class="channel reveal" style="--d:.06s"><span class="ico"><svg class="ic"><use href="#i-whats"/></svg></span><small>Fale conosco · WhatsApp</small><b id="chWhats"></b></div>
+      <div class="channel reveal" style="--d:.12s"><span class="ico"><svg class="ic"><use href="#i-mail"/></svg></span><small>E-mail</small><b id="chMail"></b></div>
+      <div class="channel reveal" style="--d:.18s"><span class="ico"><svg class="ic"><use href="#i-pix"/></svg></span><small>Chave PIX / dados bancários</small><b id="chPix"></b><button class="copy" id="copyPix" type="button" disabled><svg class="ic"><use href="#i-copy"/></svg><span>Copiar chave</span></button></div>
+    </div>
+
+    <div class="visit" id="visite" style="margin-top:56px">
+      <div class="visit__info reveal">
+        <p class="eyebrow eyebrow--dark">Visite e fale conosco</p>
+        <h3 class="subhead">APAE de Campina Grande</h3>
+        <ul class="visit__list">
+          <li><span class="ico"><svg class="ic"><use href="#i-pin"/></svg></span><div><small>Endereço</small><b id="vAddr"></b></div></li>
+          <li><span class="ico"><svg class="ic"><use href="#i-clock"/></svg></span><div><small>Horário de atendimento</small><b id="vHours"></b></div></li>
+          <li><span class="ico"><svg class="ic"><use href="#i-phone"/></svg></span><div><small>Telefones</small><b id="vPhones"></b></div></li>
+        </ul>
+        <div class="hero__cta">
+          <a class="btn btn--teal btn--sm" id="vMap" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-pin"/></svg> Abrir no mapa</a>
+          <a class="btn btn--line btn--sm" id="vWa" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-whats"/></svg> Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="visit__map reveal" style="--d:.1s">
+        <iframe id="mapFrame" title="Mapa: APAE de Campina Grande" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="grid grid--2 grid--start" style="margin-top:84px">
+      <div class="media-slot reveal">
+        <h3>Vídeos: a rotina dos cavalos e os bastidores da terapia</h3>
+        <p>Produzimos conteúdos em vídeo para aproximar você da nossa realidade.</p>
+        <figure class="foto foto--reels">
+          <video src="assets/videos/bastidores.mp4" controls playsinline preload="metadata" onerror="this.remove()"></video>
+          <div class="foto__ph"><span class="play-ph"><svg class="ic"><use href="#i-play"/></svg></span><strong>Espaço reservado para o vídeo</strong><small>assets/videos/bastidores.mp4</small></div>
+        </figure>
+      </div>
+      <div class="media-slot reveal" style="--d:.1s">
+        <h3>Depoimentos de praticantes e familiares</h3>
+        <p>Nada demonstra melhor o valor do projeto do que as vivências reais. Compartilhamos aqui histórias de superação e relatos de praticantes e familiares.</p>
+        <div id="testiBox"></div>
+      </div>
+    </div>
+
+    <div class="grid grid--2 grid--start" style="margin-top:84px">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--dark">Como realizar doações e contribuir</p>
+        <h3 class="subhead">Ajude diretamente na sustentabilidade do projeto</h3>
+        <ul class="principles-list">
+          <li><span class="ico"><svg class="ic"><use href="#i-leaf"/></svg></span><div><b>Campanhas de arrecadação</b><span>Contribua com campanhas financeiras ou de insumos, como ração, feno e equipamentos de montaria.</span></div></li>
+          <li><span class="ico"><svg class="ic"><use href="#i-heart"/></svg></span><div><b>Apoio mensal e redes de solidariedade</b><span>Participe das iniciativas de apoio mensal e das redes de solidariedade.</span></div></li>
+          <li><span class="ico"><svg class="ic"><use href="#i-handshake"/></svg></span><div><b>Parcerias e apoio profissional</b><span>Quer ser parceiro, oferecer suporte profissional ou tirar dúvidas? Entre em contato pelos nossos canais de atendimento, redes sociais ou e-mail institucional para somar forças com a nossa rede.</span></div></li>
+        </ul>
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <p class="eyebrow eyebrow--dark">Transparência e prestação de contas</p>
+        <h3 class="subhead">Nosso compromisso é total com a clareza</h3>
+        <p style="color:var(--muted);margin-bottom:20px">Publicamos periodicamente informações sobre como os recursos e as doações são aplicados, garantindo que cada apoio seja revertido de forma transparente na manutenção dos cavalos e na qualidade dos atendimentos da APAE.</p>
+        <div id="ledgerBox"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--teal" id="contato" data-nav="faca-parte">
+  <div class="container contact">
+    <div class="contact__info">
+      <p class="eyebrow reveal">Entre em contato</p>
+      <h2 class="reveal" style="--d:.06s">Vamos somar forças?</h2>
+      <p class="reveal" style="--d:.1s">Quer ser um parceiro, oferecer suporte profissional ou tirar dúvidas? Conte para nós como você gostaria de contribuir.</p>
+      <ul class="chips chips--light reveal" style="--d:.14s">
+        <li><svg class="ic"><use href="#i-heart"/></svg>Apadrinhamento</li>
+        <li><svg class="ic"><use href="#i-leaf"/></svg>Alimentação</li>
+        <li><svg class="ic"><use href="#i-store"/></svg>Empresas</li>
+        <li><svg class="ic"><use href="#i-stetho"/></svg>Veterinários</li>
+        <li><svg class="ic"><use href="#i-building"/></svg>Instituições</li>
+      </ul>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <h3>Quero contribuir</h3>
+      <p class="sub">Preencha e envie pelo canal do projeto. Suas informações são usadas apenas para montar a mensagem e não ficam salvas neste site.</p>
+      <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="contatoCampo">Telefone, WhatsApp ou e-mail</label><input id="contatoCampo" name="contato" type="text" autocomplete="off" required></div>
+      <div class="field"><label for="modalidade">Como você gostaria de ajudar?</label><select id="modalidade" name="modalidade"></select></div>
+      <div class="field" id="valorField" hidden><label for="valor">Valor mensal que cabe no seu orçamento (opcional)</label><input id="valor" name="valor" type="text" inputmode="decimal" placeholder="Ex.: 30"></div>
+      <div class="field"><label for="msg">Mensagem (opcional)</label><textarea id="msg" name="msg" rows="3"></textarea></div>
+      <button class="btn btn--terra" type="submit">Enviar mensagem <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+      <div class="draft" id="draft" hidden></div>
+      <button class="btn btn--line btn--sm" type="button" id="copyDraft" hidden style="margin-top:12px"><svg class="ic"><use href="#i-copy"/></svg> Copiar mensagem</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section--white" id="referencias" style="padding-block:60px">
+  <div class="container">
+    <div class="refs reveal" style="margin-top:0">
+      <h3>Referências</h3>
+      <p>As informações técnicas sobre equoterapia e saúde animal deste site serão acompanhadas das fontes confiáveis consultadas pela equipe do projeto.</p>
+      <ul id="refsList"><li>Lista de referências em elaboração pela equipe do projeto.</li></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= RODAPÉ (acordeão) ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__brand">
+      <a href="#inicio" class="logo" aria-label="EquoTEA – início">
+        <span class="logo__mark"><svg class="ic"><use href="#i-horseshoe"/></svg></span>
+        <span class="logo__txt"><b>Equo<i>TEA</i></b><small>APAE Campina Grande</small></span>
+      </a>
+      <p class="footer__slogan">Equoterapia para Pessoas com Transtorno do Espectro Autista. Cuidar de quem também cuida.</p>
+      <div class="footer__soc">
+        <a href="https://instagram.com/cepae.equoterapiaapaecg" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="#i-insta"/></svg></a>
+        <a href="https://wa.me/5583991149334" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-whats"/></svg></a>
+        <a href="mailto:apaecampinagrande@gmail.com" aria-label="E-mail"><svg class="ic"><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+
+    <div class="acc-list" id="accList">
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc1" id="accb1">Navegação <svg class="ic"><use href="#i-chev"/></svg></button>
+        <div class="acc__panel" id="acc1" role="region" aria-labelledby="accb1"><div><ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#equoterapia">Conheça a Equoterapia</a></li>
+          <li><a href="#cavalos">Nossos Cavalos</a></li>
+          <li><a href="#cuidado">Cuidado e Bem-Estar</a></li>
+          <li><a href="#necessidades">Nossas Necessidades</a></li>
+          <li><a href="#parceiro">Seja um Parceiro</a></li>
+          <li><a href="#faca-parte">Faça Parte</a></li>
+        </ul></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc2" id="accb2">Como ajudar <svg class="ic"><use href="#i-chev"/></svg></button>
+        <div class="acc__panel" id="acc2" role="region" aria-labelledby="accb2"><div><ul id="footHelp"></ul></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc3" id="accb3">Contato <svg class="ic"><use href="#i-chev"/></svg></button>
+        <div class="acc__panel" id="acc3" role="region" aria-labelledby="accb3"><div><ul id="footContact"></ul></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc4" id="accb4">Sobre o projeto <svg class="ic"><use href="#i-chev"/></svg></button>
+        <div class="acc__panel" id="acc4" role="region" aria-labelledby="accb4"><div>
+          <p>O EquoTEA acompanha e divulga a equoterapia realizada na APAE de Campina Grande (fundada em 1º de setembro de 1982), com atenção à saúde e ao bem-estar dos cavalos. Projeto acadêmico de Medicina Veterinária.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p>© 2026 EquoTEA · Projeto acadêmico de Medicina Veterinária, em parceria com a APAE de Campina Grande.</p>
+      <p>As fotos, os depoimentos e os dados de contato exibidos neste site só devem ser publicados com autorização.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="fabs">
+  <button class="totop" id="toTop" type="button" aria-label="Voltar ao topo"><svg class="ic"><use href="#i-up"/></svg></button>
+  <a href="https://wa.me/5583991149334?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20EquoTEA." class="wa-chat" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg class="ic"><use href="#i-whats"/></svg></a>
+  <a href="#parceiro" class="wa" aria-label="Seja um parceiro"><svg class="ic"><use href="#i-heart"/></svg><span>Seja um parceiro</span></a>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="lightbox__x" type="button" aria-label="Fechar">×</button>
+  <img alt="" id="lbImg">
+</div>
+
+<script src="js/dados.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

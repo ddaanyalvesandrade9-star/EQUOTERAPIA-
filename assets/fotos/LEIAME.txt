@@ -1,0 +1,23 @@
+FOTOS E VÍDEOS REAIS DO EQUOTEA
+================================
+Coloque os arquivos nesta pasta com EXATAMENTE estes nomes. O site os
+detecta sozinho: onde o arquivo existir, a foto aparece; onde não existir,
+fica o espaço reservado. Use somente imagens com autorização.
+
+hero.jpg            Foto 1 do carrossel do topo (formato vertical, 4:5)
+hero-2.jpg          Foto 2 do carrossel do topo
+hero-3.jpg          Foto 3 do carrossel do topo
+galeria-1.jpg ... galeria-6.jpg   Galeria "Momentos do EquoTEA" (clique amplia a foto)
+hero-fundo.jpg      (opcional) Fundo do topo da página
+apae.jpg            Foto da APAE de Campina Grande
+equoterapia.jpg     Foto de uma sessão de equoterapia
+cavalo-1.jpg        Cavalo 1   (nome, idade etc.: editar em js/dados.js)
+cavalo-2.jpg        Cavalo 2
+cavalo-3.jpg        Cavalo 3   (para mais cavalos, adicione itens em js/dados.js)
+divulgacao.jpg      Foto da seção "Faça parte"
+bastidores-capa.jpg (opcional) Capa do vídeo
+
+Vídeo (pasta assets/videos/):
+bastidores.mp4      Rotina dos cavalos e bastidores da terapia
+
+Dicas: JPG ou WebP com até ~300 KB por foto deixa o site rápido.
